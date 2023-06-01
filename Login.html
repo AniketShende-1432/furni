@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<script src="project.js"></script>
+	<title>Login page</title>
+	<link rel="stylesheet" type="text/css" href="Loginstyle.css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div class="Login-form" id="login1">	
+<form action="login.php" method="post" name="registration" onSubmit="return validateform();">
+	<h1>Login form</h1>
+	<input type="email" placeholder="Enter your email" class="box" name="email" required>
+	<input type="password" placeholder="Enter your password" class="box" name="password" required>
+	<input type="submit" value="Login" class="btn">
+	<p>Not register yet? <a href="reg.html" target="blank">Register</a></p>
+	<p>Forgot Password <a href="forpass.html">click here</a></p>
+</form>
+</div>
+</body>
+</html>

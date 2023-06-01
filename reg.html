@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<script src="fv1.js"></script>
+	<title>Register Form</title>
+	<link rel="stylesheet" type="text/css" href="regstyle.css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<img src="back.webp" alt="image">
+<div class="reg-form">
+	<h1>Register Form</h1>
+<form action="reg.php" method=post name="registration" onSubmit="return validateform();">
+	<label class="font">First Name:</label><input type="text" name="Fname" class="box"  required>
+	<label class="font">Last Name:</label><input type="text" name="Lname" class="box" required>
+	<label class="font">Email:</label><input type="email" name="email" class="box" required>
+	<label class="font">Password:</label><input type="password" class="box" name="password" required>
+	<label class="font">Confirm Password:</label><input type="password" class="box" placeholder="Re-enter" name="Cpassword" required>
+	<label class="font">Gender:</label>
+		<ol>
+		<li><input type="radio" name="sex" value="m">Male</li>
+		<li><input type="radio" name="sex" value="f">Female</li>
+		<li><input type="radio" name="sex" value="o">Others</li>
+		</ol>
+	<label class="font">Contact Number:</label><input type="tel" name="Contact" placeholder="Enter 10 digits" pattern="[7/8/9]{1}[0-9]{9}" class="box"required>
+	<label class="font">Address:</label><textarea cols=50 rows=4 class="box" name="address"></textarea>
+	<input type="submit" value="Submit" class="btn" >
+	<input type="reset" value="Reset" class="btn" >
+</form>
+</div>
+</body>
+</html>

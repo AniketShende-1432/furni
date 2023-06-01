@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<script src="adminreg.php"></script>
+	<title>Register Form</title>
+	<link rel="stylesheet" type="text/css" href="adminregstyle.css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div class="reg-form">
+	<h1>Register Form</h1>
+<form action="adminreg.php" method=post name="registration" onSubmit="return validateform();">
+	<label class="font">First Name:</label><input type="text" name="Fname" class="box"  required>
+	<label class="font">Last Name:</label><input type="text" name="Lname" class="box" required>
+	<label class="font">Email:</label><input type="email" name="email" class="box" required>
+	<label class="font">Password:</label><input type="password" class="box" name="password" required>
+	<input type="submit" value="Submit" class="btn" >
+	<input type="reset" value="Reset" class="btn" >
+</form>
+</div>
+</body>
+</html>

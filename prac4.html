@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>Register Form</title>
+	<link rel="stylesheet" type="text/css" href="prac4.css" />
+</head>
+<body>
+<div class="reg-form">
+<form action="" method="post" name="registration" onSubmit="return validateform();">
+	<label class="font">First Name:</label><input type="text" name="Fname" class="box"  required pattern="[A-Za-z]+"title="Only Alphabet characters">
+	<label class="font">Last Name:</label><input type="text" name="Lname" class="box" required pattern="[A-Za-z]+"title="Only Alphabet characters">
+	<label class="font">Email:</label><input type="text" name="email" class="box" required pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}" title="Enter valid email address">
+	<label class="font">Password:</label><input type="password" class="box" name="password" required pattern="^\S{6,}$" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Must have at least 6 characters' : ''); if(this.checkValidity()) form.password_two.pattern = this.value;">
+	<label class="font">Confirm Password:</label><input type="password" class="box" placeholder="Re-enter" name="Cpassword" required pattern="^\S{6,}$" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Please enter the same Password as above' : '');">
+	<label class="font">Pincode:</label><input type="tel" placeholder="Enter the pincode" name="contact" class="box" required pattern="[0-9-0-9]{7}" title="write in abc-xyz format and in numbers">
+	<label class="font">Contact Number:</label><input type="tel" name="Contact" placeholder="Enter 10 digits" pattern="[7/8/9]{1}[0-9]{9}" class="box"required>
+	<label class="font">Address:</label><input type="text" height="50" width="50" class="box1" name="address" required pattern="[A-Za-z0-9]+"title="Only Alphanumeric characters">
+	<input type="submit" value="Submit" class="btn" >
+	<input type="reset" value="Reset" class="btn" >
+</form>
+</div>
+</body>
+</html>

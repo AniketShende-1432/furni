@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Leaflet sample</title>
+      <link rel = "stylesheet" href = "http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css"/>
+      <script src = "http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+   </head>
+
+   <body>
+      <div id = "map" style = "width: 900px; height: 580px"></div>
+      <script>
+		 // Creating map options
+		 var mapOptions = {
+   		 center: [18.9220,72.8347],
+   		 zoom: 10
+		 }
+   	 
+		 // Creating a map object
+		 var map = new L.map('map', mapOptions);
+   	 
+		 // Creating a Layer object
+		 var layer = new L.TileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png');
+   	 
+		 // Adding layer to the map
+		 map.addLayer(layer);
+    
+		 var marker1 = L.marker([18.9220,72.8347]);
+		 marker1.addTo(map);
+    
+    var iconOptions = {
+        	iconUrl: 'map.png',
+        	iconSize: [50, 50]
+     	}
+     	// Creating a custom icon
+     	var customIcon = L.icon(iconOptions);
+    	 
+     	// Creating Marker Options
+     	var markerOptions = {
+        	title: "MyLocation",
+        	clickable: true,
+        	draggable: false,
+        	icon: customIcon
+     	}
+     	// Creating a Marker
+     	var marker = L.marker([18.9220,72.8347], markerOptions);
+    	 	 
+     	// Adding marker to the map
+     	marker.addTo(map);
+
+     var latlngs = [
+        	[18.9894, 73.1175],
+        	[19.2183, 72.9781],
+        	[19.2403,73.1305]
+     	];
+     	// Creating a polygon
+     	var polygon = L.polygon(latlngs, {color: 'blue'});
+    	 
+     	// Adding to polygon to map
+     	polygon.addTo(map);
+
+    	var marker2 = L.marker([18.9902,73.1277]);
+     	marker2.bindPopup('Pillai College of Engineering').openPopup();
+	marker2.addTo(map);
+      </script>
+   </body>
+   
+</html>
+
+

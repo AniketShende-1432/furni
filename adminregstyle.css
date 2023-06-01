@@ -1,0 +1,56 @@
+.reg-form{
+    position: fixed;
+    top:0;right:30%;
+    z-index:1000;
+    width:35rem; height:100vh;
+    background:honeydew;
+    padding:1rem;
+    overflow-y:scroll;
+    -ms-overflow-style:none;
+    scrollbar-width:none;
+    }
+    .reg-form::-webkit-scrollbar{
+    display:none;
+    }
+    div.reg-form{
+    width:35rem; 
+    height:100vh;
+    }
+    
+    form{
+    padding:2rem;
+    border:solid;
+    height:55%;
+    background-color:white;
+    margin-bottom:2rem;
+    }
+    
+    h1{
+    font-size:2.2rem;
+    color:green;
+    }
+    
+    .box{
+    width:90%;
+    font-size:1rem;
+    color:green;
+    padding:0.4rem ;
+    margin:.7rem;
+    }
+    
+    label.font{
+    font-size:1.2rem;
+    color:green;
+    }
+    
+    .btn{
+    margin:1rem;
+    width:40%;
+    height:2.5rem;
+    font-size:1.2rem;
+    text-align:center;
+    background:mediumseagreen;
+    }
+    body{
+    background-color:honeydew;
+    }
