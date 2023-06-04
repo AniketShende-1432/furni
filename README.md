@@ -1,1 +1,7 @@
 # furni![pr1](https://github.com/AniketShende-1432/furni.github.io/assets/135197475/c6c1fb34-54d2-41c2-9471-2cc6e2640710)
+![pr2](https://github.com/AniketShende-1432/furni.github.io/assets/135197475/7b8f9298-d4bf-42b8-acbf-723a4b632993)
+![pr3](https://github.com/AniketShende-1432/furni.github.io/assets/135197475/ad8e5903-3631-4183-a34a-374550bb6fee)
+![pr4](https://github.com/AniketShende-1432/furni.github.io/assets/135197475/caa9d2e0-1cd8-4f43-ba28-36c8a3b381f7)
+![pr2](https://github.com/AniketShende-1432/furni.github.io/assets/135197475/4eb74fff-7e36-4d46-87d0-83ea717eed0c)
+![pr3](https://github.com/AniketShende-1432/furni.github.io/assets/135197475/45471f2a-e5b6-4f85-b2bd-5ea703416f48)
+![pr5](https://github.com/AniketShende-1432/furni.github.io/assets/135197475/18672733-0749-46ee-b6cf-20bbbe1c6c82)
